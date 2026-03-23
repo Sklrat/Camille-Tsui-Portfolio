@@ -1,0 +1,9 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    border:solid;
+    max-width: 800px;;
+
+    padding: 3rem;
+}
