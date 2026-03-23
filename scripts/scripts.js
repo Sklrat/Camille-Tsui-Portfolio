@@ -1,3 +1,19 @@
+//nav bar
+let gamesClick = document.getElementById("games-button")
+let artClick = document.getElementById("art-button")
+let miscClick = document.getElementById("misc-bcutton")
+
+gamesClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/games.html"
+})
+
+artClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/art.html"
+})
+
+miscClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/misc.html"
+})
 
 //adding functionality to social links
 let emailClick = document.getElementById("email");
