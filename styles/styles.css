@@ -129,3 +129,50 @@ p, li {
     color: var(--button-colour);
     text-decoration: underline;
 }
+
+
+
+/*Games page*/
+.g-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+}
+.game-card {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+
+    border: solid;
+}
+
+.game-title {
+    margin:auto;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.game-date {
+    font-size: 1rem;
+    margin: auto;
+}
+
+.game-card p {
+    padding-inline: 1rem;
+    font-size: 1rem;
+}
+
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.game-tags li{
+    font-size: 1rem;
+}
+
+.game-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
