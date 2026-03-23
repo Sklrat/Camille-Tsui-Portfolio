@@ -1,12 +1,18 @@
+:root {
+    --max-content-width: 800px;
+    --background-colour:#f2f2f2;
+    --button-colour: rgb(231, 106, 3);
+}
+
 main {
     display: flex;
     flex-direction: column;
     margin-inline: auto;
-    max-width: 800px;;
+    max-width: var(--max-content-width);
     padding: 3rem;
 
-    border:solid;
-    background-color: whitesmoke;
+    border:0.5rem, solid, black;
+    background-color: var(--background-colour);
 }
 
 body {
@@ -15,8 +21,8 @@ body {
     background-attachment: fixed;
 }
 
-/* fonts */
-h1, h2, p, li {
+/* fonts - fix later*/
+h1, h2, h3, p, li {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -24,14 +30,35 @@ h1, h2, p, li {
 
 h1 {
     font-size: 5rem;
+    margin: auto;
 }
 
 h2 {
     font-size: 3rem;
 }
 
-p, li{
+p, li, h3{
     font-size: 2rem;
+}
+
+/*nav- bar*/
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    max-width: var(--max-content-width);
+    margin: auto;
+    margin-top: 4rem;
+}
+header li {
+    font-size: 3rem;
+    list-style: none;
+}
+
+header li:hover {
+    -webkit-text-stroke: 1px white;
+    transform: scale(1.2);
+    cursor:pointer;
 }
 /*
 p, li {
@@ -42,6 +69,10 @@ p, li {
     */
 
 /*Main page stuff*/
+
+#job-title {
+    margin: auto;
+}
 
 /* socials stuff */
 .socials li {
@@ -67,6 +98,13 @@ p, li {
     max-width: 600px;
 }
 
+.socials li:hover {
+    background-color: white;
+    cursor:pointer;
+    transform: scale(1.1);
+    color: var(--button-colour);
+}
+
 /* projects */
 
 .projects li {
@@ -83,4 +121,11 @@ p, li {
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
+}
+
+.projects li:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+    color: var(--button-colour);
+    text-decoration: underline;
 }
