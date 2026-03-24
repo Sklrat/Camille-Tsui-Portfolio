@@ -4,6 +4,36 @@
     --button-colour: rgb(231, 106, 3);
 }
 
+@font-face {
+    font-family: pixellari;
+    src: url(../fonts/Pixellari.ttf);
+}
+
+@font-face {
+    font-family: easvhs;
+    src:url(../fonts/easvhs.ttf)
+}
+
+@font-face {
+    font-family: openMine;
+    src: url(../fonts/OpenMine.ttf);
+}
+
+@font-face {
+    font-family: betterVCR;
+    src: url(../fonts/BetterVCR\ 25.09.ttf);
+}
+
+@font-face {
+    font-family: grapeSoda;
+    src: url(../fonts/GrapeSoda.ttf);
+}
+
+@font-face {
+    font-family: arw;
+    src: url(../fonts/ari-w9500-display.ttf);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -23,24 +53,22 @@ body {
 
 /* fonts - fix later*/
 h1, h2, h3, p, li {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: arw;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: auto;
 }
 
 h2 {
-    font-size: 3rem;
-}
-
-p, li, h3{
     font-size: 2rem;
 }
 
+p, li, h3 {
+    font-family: betterVCR;
+    font-size: 1rem;
+}
 /*nav- bar*/
 header ul {
     display: flex;
@@ -51,7 +79,8 @@ header ul {
     margin-top: 4rem;
 }
 header li {
-    font-size: 3rem;
+    font-family: grapeSoda;
+    font-size: 4rem;
     list-style: none;
 }
 
@@ -60,13 +89,8 @@ header li:hover {
     transform: scale(1.2);
     cursor:pointer;
 }
-/*
-p, li {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
 
-}
-    */
+
 
 /*Main page stuff*/
 
@@ -175,4 +199,5 @@ p, li {
 .game-card:hover {
     transform: scale(1.1);
     cursor: pointer;
+    background-color: white;
 }
