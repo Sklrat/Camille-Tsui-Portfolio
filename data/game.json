@@ -1,0 +1,11 @@
+[
+    {
+        "title":"Got any Grapes?",
+        "date":"June 2025",
+        "description": "A resturant managment game that was inspired by the duck song",
+        "how-to-play": "Objective is the serve the ducks before time runs out, you have 3 lives drag objects around by clicking on them, there is a trash on the bottom right to get rid of and object. To serve duck simply drag an object onto a request bubble and click on it. How to make Lemonade: First pick up lemon and then click on the jug, dispose of lemon, put glass on to the placement area and use the jug to fill the glass with lemonade.",
+        "link": "https://camsthingz.itch.io/got-any-grapes",
+        "tags": ["programming", "unity"],
+        "image": "../images/got-any-grapes.png"
+    }
+]

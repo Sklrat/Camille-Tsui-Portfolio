@@ -133,7 +133,7 @@ p, li {
 
 
 /*Games page*/
-.g-cards {
+#games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

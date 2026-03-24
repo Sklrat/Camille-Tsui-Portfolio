@@ -1,0 +1,12 @@
+Game data can includes:
+title
+date
+about
+how-to-play
+what-i-worked-on
+image
+link
+git
+tags
+
+not all have to be included
