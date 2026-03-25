@@ -2,11 +2,12 @@ Game data can includes:
 title
 date
 about
-how-to-play
-what-i-worked-on
+how_to_play
+how_it_was_made
 image
 link
 git
-tags
+tags (can have multiple)
 
 not all have to be included
+order does not matter

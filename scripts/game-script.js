@@ -1,0 +1,39 @@
+fetch("../data/game.json")
+.then(res => res.json())
+.then(games => {
+    
+    const game = games.find(g => g.id === "got-any-grapes");
+
+    const container = document.getElementById("game-detail-container");
+
+    container.innerHTML += `
+        ${game.title ? `<h1>${game.title}</h1>`: ""}
+        ${game.image ? `
+            <div id="game-image-container">
+                <img class="game-image" src="${game.image}" alt="">
+            </div>` : ""}
+            
+        <div class="button-container">
+        ${game.link ? `<p id="play-button" onclick="goToGame('${game.link}')">Play!</p>` : ""}
+        ${game.git ? `<svg id="git-button" onclick="goToGame('${game.git}')" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="M23 9v6h-1v2h-1v2h-1v1h-1v1h-1v1h-2v1h-1v-5h-1v-1h1v-1h2v-1h1v-1h1V9h-1V6h-2v1h-1v1h-1V7h-4v1H9V7H8V6H6v3H5v5h1v1h1v1h2v2H7v-1H6v-1H4v1h1v2h1v1h3v3H8v-1H6v-1H5v-1H4v-1H3v-2H2v-2H1V9h1V7h1V5h1V4h1V3h2V2h2V1h6v1h2v1h2v1h1v1h1v2h1v2z"/></svg>` : ""}
+        </div>
+        ${game.description ? `<p id="game-descprption">${game.description}</p>` : ""}
+        ${game.how_to_play ? 
+            `<h2 id="how-to-play-header">How to play</h2>
+                <p id="how-to-play-text">${game.how_to_play}</p>` : ""}
+        ${game.how_it_was_made ? `
+            <h2 id="how-it-was-made-text">How it was made</h2>
+                <p id="how-it-was-made-text">${game.how_it_was_made}</p>` : ""}
+        ${game.date ? `<p id="date">${game.date}</p>` : ""}
+        ${game.tags ? `
+            <ul id="tags">
+                ${game.tags.map(tag => `<li>#${tag}</li>`).join("")}
+            </ul>` 
+            :""}
+    `
+            //need to add button functionality
+})
+
+function goToGame(link) {
+  window.location.href = link;
+}

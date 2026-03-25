@@ -35,3 +35,22 @@ linkedinClick.addEventListener("click", ()=> {
 youtubeClick.addEventListener("click", ()=> {
     window.location.href = "https://www.youtube.com/@CamsThingz";
 })
+
+
+
+//projects button
+let gamesClick = document.getElementById("games")
+let artClick = document.getElementById("art")
+let miscClick = document.getElementById("misc")
+
+gamesClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/games.html"
+})
+
+artClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/art.html"
+})
+
+miscClick.addEventListener("click", ()=> {
+    window.location.href = "../pages/misc.html"
+})
