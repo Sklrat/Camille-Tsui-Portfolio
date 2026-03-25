@@ -10,7 +10,7 @@ fetch("../data/game.json")
     const container = document.getElementById("game-detail-container");
 
     container.innerHTML += `
-        ${game.title ? `<h1>${game.title}</h1>`: ""}
+        ${game.title ? `<h1 id="game-title">${game.title}</h1>`: ""}
         ${game.image ? `
             <div id="game-image-container">
                 <img class="game-image" src="${game.image}" alt="">

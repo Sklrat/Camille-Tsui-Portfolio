@@ -166,6 +166,7 @@ header li:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap:2rem;
+    margin-top: 2rem;
 }
 .game-card {
     display: flex;
@@ -175,7 +176,7 @@ header li:hover {
     border: solid;
 }
 
-.game-title {
+.card-game-title {
     margin:auto;
     font-size: 2rem;
     padding: 1rem;
@@ -254,6 +255,17 @@ header li:hover {
 
 #tags {
     display: flex;
+    
     gap: 2rem;
 }
 
+#game-title {
+    display: flex;
+    justify-content: center;
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}

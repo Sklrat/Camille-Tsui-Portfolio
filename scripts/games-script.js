@@ -7,7 +7,7 @@ fetch("../data/game.json")
     games.forEach(game => {
         container.innerHTML += `
             <div class="game-card" onclick="goToGamePage('${game.id}')">
-                ${game.title ? `<h2 class="game-title">${game.title}</h2>` : ""}
+                ${game.title ? `<h2 class="card-game-title">${game.title}</h2>` : ""}
                 ${game.image ? `<img src="${game.image}" alt="">` : ""}
                 ${game.description ? `<p>${game.description}</p>` : ""}
                 ${game.date ? `<p class="game-date">${game.date}</p>` : ""}
