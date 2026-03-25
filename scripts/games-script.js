@@ -6,7 +6,7 @@ fetch("../data/game.json")
 
     games.forEach(game => {
         container.innerHTML += `
-            <div class="game-card">
+            <div class="game-card" onclick="goToGamePage('${game.id}')">
                 ${game.title ? `<h2 class="game-title">${game.title}</h2>` : ""}
                 ${game.image ? `<img src="${game.image}" alt="">` : ""}
                 ${game.description ? `<p>${game.description}</p>` : ""}
@@ -20,3 +20,7 @@ fetch("../data/game.json")
         `
     })
 })
+
+function goToGamePage(id) {
+    window.location.href = `../pages/game.html?id=${id}`
+}

@@ -1,8 +1,11 @@
+const params = new URLSearchParams(window.location.search);
+const gameId = params.get("id")
+
 fetch("../data/game.json")
 .then(res => res.json())
 .then(games => {
     
-    const game = games.find(g => g.id === "got-any-grapes");
+    const game = games.find(g => g.id === gameId);
 
     const container = document.getElementById("game-detail-container");
 
