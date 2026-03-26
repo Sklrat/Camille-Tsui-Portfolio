@@ -1,7 +1,12 @@
 //nav bar
 //load nav
+const BASE = "Camille-Tsui-Portfolio/"
 window.addEventListener("DOMContentLoaded", () => {
-    fetch ("../navbar.html")
+
+    const isIntPages = window.location.pathname.includes("/pages/");
+    const pathPrefix = isIntPages ? "../" : "";
+
+    fetch (BASE + pathPrefix + "/navbar.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("navbar").innerHTML = data;
@@ -13,19 +18,19 @@ window.addEventListener("DOMContentLoaded", () => {
         let miscClick = document.getElementById("misc-button")
         
         aboutClick.addEventListener("click", ()=> {
-            window.location.href = "/index.html"
+            window.location.href = pathPrefix + "/index.html"
         })
 
         gamesClick.addEventListener("click", ()=> {
-            window.location.href = "/pages/games.html"
+            window.location.href = pathPrefix + "/pages/games.html"
         })
         
         artClick.addEventListener("click", ()=> {
-            window.location.href = "/pages/art.html"
+            window.location.href = pathPrefix + "/pages/art.html"
         })
         
         miscClick.addEventListener("click", ()=> {
-            window.location.href = "/pages/misc.html"
+            window.location.href = pathPrefix + "/pages/misc.html"
         })
     })
 })
