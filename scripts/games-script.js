@@ -8,9 +8,9 @@ fetch("../data/game.json")
         container.innerHTML += `
             <div class="game-card" onclick="goToGamePage('${game.id}')">
                 ${game.title ? `<h2 class="card-game-title">${game.title}</h2>` : ""}
-                ${game.image ? `<img src="${game.image}" alt="">` : ""}
-                ${game.description ? `<p>${game.description}</p>` : ""}
-                ${game.date ? `<p class="game-date">${game.date}</p>` : ""}
+                ${game.image ? `<img class="card-game-image" src="${game.image}" alt="">` : ""}
+                ${game.description ? `<p class="card-game-description">${game.description}</p>` : ""}
+                ${game.date ? `<p id="card-game-date">${game.date}</p>` : ""}
                 ${game.tags ? `
                     <ul class="game-tags">
                     ${game.tags.map(tag => `<li>#${tag}</li>`).join("")}

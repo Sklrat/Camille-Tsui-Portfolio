@@ -10,6 +10,7 @@ fetch("../data/game.json")
     const container = document.getElementById("game-detail-container");
 
     container.innerHTML += `
+        <section>
         ${game.title ? `<h1 id="game-title">${game.title}</h1>`: ""}
         ${game.image ? `
             <div id="game-image-container">
@@ -21,12 +22,17 @@ fetch("../data/game.json")
         ${game.git ? `<svg id="git-button" onclick="goToGame('${game.git}')" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="M23 9v6h-1v2h-1v2h-1v1h-1v1h-1v1h-2v1h-1v-5h-1v-1h1v-1h2v-1h1v-1h1V9h-1V6h-2v1h-1v1h-1V7h-4v1H9V7H8V6H6v3H5v5h1v1h1v1h2v2H7v-1H6v-1H4v1h1v2h1v1h3v3H8v-1H6v-1H5v-1H4v-1H3v-2H2v-2H1V9h1V7h1V5h1V4h1V3h2V2h2V1h6v1h2v1h2v1h1v1h1v2h1v2z"/></svg>` : ""}
         </div>
         ${game.description ? `<p id="game-descprption">${game.description}</p>` : ""}
+        </section>
         ${game.how_to_play ? 
-            `<h2 id="how-to-play-header">How to play</h2>
-                <p id="how-to-play-text">${game.how_to_play}</p>` : ""}
+            `<section>
+            <h2 id="how-to-play-header">How to play</h2>
+                <p id="how-to-play-text">${game.how_to_play}</p>
+            </section>` : ""}
         ${game.how_it_was_made ? `
+            <section>
             <h2 id="how-it-was-made-text">How it was made</h2>
-                <p id="how-it-was-made-text">${game.how_it_was_made}</p>` : ""}
+                <p id="how-it-was-made-text">${game.how_it_was_made}</p>
+                </section>` : ""}
         ${game.date ? `<p id="date">${game.date}</p>` : ""}
         ${game.tags ? `
             <ul id="tags">
@@ -34,7 +40,6 @@ fetch("../data/game.json")
             </ul>` 
             :""}
     `
-            //need to add button functionality
 })
 
 function goToGame(link) {

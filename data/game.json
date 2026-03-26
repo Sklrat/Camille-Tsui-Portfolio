@@ -14,6 +14,10 @@
         "id": "test",
         "title": "test game",
         "description": "this is just test data",
-        "tags":["testing"]
+        "tags":["testing"],
+        "date": "2020",
+        "image": "../images/test-image.jpg",
+        "description": "fdshj fdskh  dsnck wjds wjk  sdjkfdslkjc  kjdsalkhjn kjd hfsahu fuehfk"
+        
     }
 ]
