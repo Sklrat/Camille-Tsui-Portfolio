@@ -11,13 +11,22 @@
         "image": "../images/got-any-grapes.png"
     },
     {
+        "id": "finding-god",
+        "title": "Finding God",
+        "date": "April 2024",
+        "description": "Grow your neck long enough to reach God!!!",
+        "how_to_play": "Move your mouse around for the turtle to follow, EAT ALL THE APPLES AND GROW YOUR NECK!!! <br> If you miss an apple you die XP bleh, God will be there to greet you at your highest score.",
+        "how_it_was_made": "This game was based of a dumb inside joke where I made an animation of a turtle growing it's neck to see god. I made the entire thing during easter break cuz apparently i have nothing better to do",
+        "link": "https://camsthingz.itch.io/finding-god",
+        "tags": ["unity", "programming", "sprite work"]
+        
+    },
+    {
         "id": "test",
         "title": "test game",
-        "description": "this is just test data",
         "tags":["testing"],
         "date": "2020",
         "image": "../images/test-image.jpg",
         "description": "fdshj fdskh  dsnck wjds wjk  sdjkfdslkjc  kjdsalkhjn kjd hfsahu fuehfk"
-        
     }
 ]
