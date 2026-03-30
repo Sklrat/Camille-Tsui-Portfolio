@@ -50,8 +50,11 @@ main {
 body {
     color: var(--primary-colour);
     /*background*/
-    background-image: url("../images/water-bg.png");
+    background-image: url("../images/ocean-bg.png");
     background-attachment: fixed;
+    background-size:cover;
+    background-position: bottom;
+    image-rendering: pixelated;
 }
 
 /* fonts - fix later*/
