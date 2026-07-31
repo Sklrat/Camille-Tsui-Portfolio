@@ -12,9 +12,17 @@ fetch("../data/game.json")
     container.innerHTML += `
         <section>
         ${game.title ? `<h1 id="game-title">${game.title}</h1>`: ""}
-        ${game.image ? `
-            <div id="game-image-container">
-                <img class="game-image" src="${game.image}" alt="">
+        ${Array.isArray(game.image) && game.image.length > 0 ? `
+            <div class="carousel" id="game-image-container" data-carousel>
+            <button class="carousel-button-prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button-next" data-carousel-button="next">&#8658;</button>
+                <ul data-slides>
+                ${game.image.map((imgSrc, index) => `
+                    <li class="slide" ${index === 0 ? `data-active` : ''}>
+                        <img src="${imgSrc}" alt="">
+                    </li>
+                    `).join('')}
+                </ul>
             </div>` : ""}
             
         <div class="button-container">
@@ -40,6 +48,25 @@ fetch("../data/game.json")
             </ul>` 
             :""}
     `
+    // making carousel buttons work
+    const buttons = document.querySelectorAll("[data-carousel-button]")
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+            const slides = button
+            .closest("[data-carousel]")
+            .querySelector("[data-slides]");
+    
+            const activeSlide = slides.querySelector("[data-active]")
+            let newIndex = [...slides.children].indexOf(activeSlide) + offset
+            if (newIndex < 0) newIndex = slides.children.length - 1
+            if (newIndex >= slides.children.length) newIndex = 0
+    
+            slides.children[newIndex].dataset.active = true
+            delete activeSlide.dataset.active
+        })
+    })
 })
 
 function goToGame(link) {

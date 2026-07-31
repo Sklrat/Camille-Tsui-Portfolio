@@ -8,7 +8,7 @@
         "how_it_was_made": "This project was made for my final project in my highschool CS course. <br> I programmed this using unity, and for the sprites I would use screen shots from the Duck Song MV or quickly scribble them <br> I have more ideas for this game such as a game progression where you unlock new items to sell but idk if I will get there ¯|(ツ)/¯",
         "link": "https://camsthingz.itch.io/got-any-grapes",
         "tags": ["programming", "unity"],
-        "image": "../images/got-any-grapes.png"
+        "image": ["../images/got-any-grapes.png", "../images/test-image.jpg"]
     },
     {
         "id": "finding-god",
@@ -26,7 +26,7 @@
         "title": "test game",
         "tags":["testing"],
         "date": "2020",
-        "image": "../images/test-image.jpg",
+        "image": ["../images/test-image.jpg"],
         "description": "fdshj fdskh  dsnck wjds wjk  sdjkfdslkjc  kjdsalkhjn kjd hfsahu fuehfk"
     }
 ]
