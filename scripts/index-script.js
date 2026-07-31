@@ -25,7 +25,7 @@ gitClick.addEventListener("click", ()=> {
 })
 
 itchClick.addEventListener("click", ()=> {
-    window.location.href = "https://camsthingz.itch.io/";
+    window.location.href = "https://glitchasaurus.itch.io/";
 })
 
 linkedinClick.addEventListener("click", ()=> {

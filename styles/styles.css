@@ -343,9 +343,12 @@ header li:hover {
 
 .slide {
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 
 .slide[data-active] {
     opacity: 1;
+    transition-delay: 0;
 }
 
