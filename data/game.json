@@ -1,12 +1,26 @@
 [
     {
+        "id": "the-spinny-gun",
+        "title": "the spinny gun",
+        "thumbnail": "../images/spinny-gun-thumbnail.png",
+        "date": "June 2026",
+        "description": "A spin the gun game",
+        "how_to_play": "Click the gun to spin it, click it to stop it, kill all the enemys. Use your cards to help manipulate the gun to shoot the enimes. if you run out of bullets you loose. Also don't shoot the hostages",
+        "how_it_was_made": "This was made for the serious game jam, it placed 1500/3511 over all, which is a mid ranking but im still pretty proud of how it came out given the time i made it in and how it was a solo jam :) Theres more features i wana add likea guide book and a endless mode but im lazy...",
+        "link": "https://glitchasaurus.itch.io/the-spinny-gun",
+        "tags": ["godot", "programming", "game jam", "sprite work"],
+        "image": ["../images/spinny-gun-ss.png"]
+        
+    },
+    {
         "id": "got-any-grapes",
         "title":"Got any Grapes?",
+        "thumbnail": "../images/got-any-grapes.png",
         "date":"June 2025",
         "description": "A resturant managment game that was inspired by the duck song",
         "how_to_play": "Objective is the serve the ducks before time runs out, you have 3 lives. <br> drag objects around by clicking on them, there is a trash on the bottom right to get rid of and object. To serve duck simply drag an object onto a request bubble and click on it. <br>How to make Lemonade: <br>First pick up lemon and then click on the jug, dispose of lemon, put glass on to the placement area and use the jug to fill the glass with lemonade.",
         "how_it_was_made": "This project was made for my final project in my highschool CS course. <br> I programmed this using unity, and for the sprites I would use screen shots from the Duck Song MV or quickly scribble them <br> I have more ideas for this game such as a game progression where you unlock new items to sell but idk if I will get there ¯|(ツ)/¯",
-        "link": "https://camsthingz.itch.io/got-any-grapes",
+        "link": "https://glitchasaurus.itch.io/got-any-grapes",
         "tags": ["programming", "unity"],
         "image": ["../images/got-any-grapes.png", "../images/test-image.jpg"]
     },
@@ -17,13 +31,14 @@
         "description": "Grow your neck long enough to reach God!!!",
         "how_to_play": "Move your mouse around for the turtle to follow, EAT ALL THE APPLES AND GROW YOUR NECK!!! <br> If you miss an apple you die XP bleh, God will be there to greet you at your highest score.",
         "how_it_was_made": "This game was based of a dumb inside joke where I made an animation of a turtle growing it's neck to see god. I made the entire thing during easter break cuz apparently i have nothing better to do",
-        "link": "https://camsthingz.itch.io/finding-god",
+        "link": "https://glitchasaurus.itch.io/finding-god",
         "tags": ["unity", "programming", "sprite work"]
         
     },
     {
         "id": "test",
         "title": "test game",
+        "thumbnail": "../images/test-image.jpg",
         "tags":["testing"],
         "date": "2020",
         "image": ["../images/test-image.jpg"],

@@ -1,6 +1,7 @@
 Game data can includes:
 id
 title
+thumbnail
 date
 about
 how_to_play

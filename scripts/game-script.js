@@ -7,23 +7,35 @@ fetch("../data/game.json")
     
     const game = games.find(g => g.id === gameId);
 
+    //idk why image not correct unless put in carousel anymore
+    //code sees if there is images and generates carousel if there is
+    //if there is onlu 1 it just put that image not whole carousel
     const container = document.getElementById("game-detail-container");
-
     container.innerHTML += `
         <section>
         ${game.title ? `<h1 id="game-title">${game.title}</h1>`: ""}
+
         ${Array.isArray(game.image) && game.image.length > 0 ? `
-            <div class="carousel" id="game-image-container" data-carousel>
-            <button class="carousel-button-prev" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button-next" data-carousel-button="next">&#8658;</button>
-                <ul data-slides>
-                ${game.image.map((imgSrc, index) => `
-                    <li class="slide" ${index === 0 ? `data-active` : ''}>
-                        <img src="${imgSrc}" alt="">
+            ${game.image.length === 1 ? `
+                <div class="carousel" id="game-image-container" data-carousel>
+                    <li class="slide" data-active>
+                        <img src="${game.image[0]}" alt="">
                     </li>
-                    `).join('')}
-                </ul>
-            </div>` : ""}
+                </div>
+                ` : `
+                    <div class="carousel" id="game-image-container" data-carousel>
+                    <button class="carousel-button-prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button-next" data-carousel-button="next">&#8658;</button>
+                        <ul data-slides>
+                        ${game.image.map((imgSrc, index) => `
+                            <li class="slide" ${index === 0 ? `data-active` : ''}>
+                                <img src="${imgSrc}" alt="">
+                            </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    `} 
+                ` : ""}
             
         <div class="button-container">
         ${game.link ? `<p id="play-button" onclick="goToGame('${game.link}')">Play!</p>` : ""}
