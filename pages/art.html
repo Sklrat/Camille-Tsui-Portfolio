@@ -6,16 +6,25 @@
     <title>Games</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../scripts/scripts.js" defer></script>
+    <script src="../scripts/art-script.js" defer></script>
 </head>
 <body>
     <header>
-    <header>
         <div id="navbar"></div>
     </header>
-    </header>
+    <div class="full-img" id="fullImgBox">
+        <img src = "../images/got-any-grapes.png" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
     <main>
         <h1>Art</h1>
         <p>This page is a work in progress</p>
+        <div class="art-container">
+            <img src = "../images/got-any-grapes.png" onclick="openFullImg(this.src)">
+            <img src = "../images/got-any-grapes.png">
+            <img src = "../images/got-any-grapes.png">
+            <img src = "../images/test-image.jpg"onclick="openFullImg(this.src)">
+        </div>
     </main>
 </body>
 </html>
