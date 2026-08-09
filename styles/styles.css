@@ -387,11 +387,13 @@ header li:hover {
     align-items: center;
     justify-content: center;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
 }
 
 .full-img img {
     width: 90%;
-    max-height: 90%;
+    max-height: 70%;
     object-fit: contain;
 }
 
@@ -403,4 +405,13 @@ header li:hover {
     color:#fff;
     cursor:pointer;
     font-family: pixellari;
+}
+
+.art-info {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
 }
