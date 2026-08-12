@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>Art</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../scripts/scripts.js" defer></script>
     <script src="../scripts/art-script.js" defer></script>
@@ -19,12 +19,23 @@
     <main>
         <h1>Art</h1>
         <div class="arts-container">
+
+            <div class="art-card" onclick="goToArtPage('digital-art')">
+                <img class="art-card-image" src="../images/art/digital-art/mako.png">
+                <h2 class="art-title">digital art</h2>
+            </div>
+
+            <div class="art-card" onclick="goToArtPage('traditional-art')">
+                <img class="art-card-image" src="../images/art/traditional-art/Dramatugry.jpg">
+                <h2 class="art-title">traditional art</h2>
+            </div>
+
             <div class="art-card" onclick="goToArtPage('pyrography')">
-                <img class="art-card-image" src="../images/art/pyography/20240406_182524.jpg">
+                <img class="art-card-image" src="../images/art/pyography/collection.jpg">
                 <h2 class="art-title">pyography</h2>
             </div>
+
         </div>
-        <a href="../pages/art-gallery.html">Art Gallery</a>
     </main>
 </body>
 </html>
