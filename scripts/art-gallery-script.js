@@ -15,7 +15,7 @@ fetch("../data/"+artID+".json")
     const conatiner = document.querySelector(".art-container");
     arts.forEach((art, index) => {
         conatiner.innerHTML += `
-        ${art.image ? `<img src="${art.image}" onclick="openFullImg(${index})">` : ""}`;
+        ${art.thumbnail ? `<img src="${art.thumbnail}" onclick="openFullImg(${index})">` : ""}`;
     });
 });
 
@@ -26,7 +26,7 @@ function openFullImg(index){
     fullImgBox.innerHTML = "";
     fullImgBox.style.display = "flex";
     fullImgBox.innerHTML += `
-    ${selectedArt.image ? `<img src=${selectedArt.image} id="fullImg">` : ""}
+    ${selectedArt.fullsize ? `<img src=${selectedArt.fullsize} id="fullImg">` : ""}
     <span onclick="closeFullImg()">X</span>
     <div class = "art-info">
     ${selectedArt.title ? `<h1>${selectedArt.title}</h1>` : ""}

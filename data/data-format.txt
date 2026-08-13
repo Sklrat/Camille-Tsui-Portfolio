@@ -11,5 +11,11 @@ link
 git
 tags (can have multiple)
 
+Art data:
+image
+title
+description
+date
+
 not all have to be included
 order does not matter

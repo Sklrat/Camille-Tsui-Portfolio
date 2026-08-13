@@ -8,7 +8,7 @@
         "how_to_play": "Click the gun to spin it, click it to stop it, kill all the enemys. Use your cards to help manipulate the gun to shoot the enimes. if you run out of bullets you loose. Also don't shoot the hostages",
         "how_it_was_made": "This was made for the serious game jam, it placed 1500/3511 over all, which is a mid ranking but im still pretty proud of how it came out given the time i made it in and how it was a solo jam :) Theres more features i wana add likea guide book and a endless mode but im lazy...",
         "link": "https://glitchasaurus.itch.io/the-spinny-gun",
-        "tags": ["godot", "programming", "game jam", "sprite work"],
+        "tags": ["godot", "programming", "game jam"],
         "image": ["../images/games/images/spinny-gun-ss.png"]
         
     },

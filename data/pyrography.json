@@ -1,53 +1,70 @@
 [
     {
-        "image": "../images/art/pyography/bird.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_bird.jpg",
+        "fullsize": "../images/art/pyography/bird.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly-collection-2.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly-collection-2.jpg",
+        "fullsize": "../images/art/pyography/butterfly-collection-2.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly.jpg",
+        "fullsize": "../images/art/pyography/butterfly.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly2.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly2.jpg",
+        "fullsize": "../images/art/pyography/butterfly2.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly3.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly3.jpg",
+        "fullsize": "../images/art/pyography/butterfly3.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly4.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly4.jpg",
+        "fullsize": "../images/art/pyography/butterfly4.jpg"
     },
     {
-        "image": "../images/art/pyography/butterfly5.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_butterfly5.jpg",
+        "fullsize": "../images/art/pyography/butterfly5.jpg"
     },
     {
-        "image": "../images/art/pyography/car.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_car.jpg",
+        "fullsize": "../images/art/pyography/car.jpg"
     },
     {
-        "image": "../images/art/pyography/cat.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_cat.jpg",
+        "fullsize": "../images/art/pyography/cat.jpg"
     },
     {
-        "image": "../images/art/pyography/collection.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_collection2.jpg",
+        "fullsize": "../images/art/pyography/collection2.jpg"
     },
     {
-        "image": "../images/art/pyography/fish.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_fish.jpg",
+        "fullsize": "../images/art/pyography/fish.jpg"
     },
     {
-        "image": "../images/art/pyography/flower.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_flower.jpg",
+        "fullsize": "../images/art/pyography/flower.jpg"
     },
     {
-        "image": "../images/art/pyography/flowers.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_flowers.jpg",
+        "fullsize": "../images/art/pyography/flowers.jpg"
     },
     {
-        "image": "../images/art/pyography/guitar.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_guitar.jpg",
+        "fullsize": "../images/art/pyography/guitar.jpg"
     },
     {
-        "image": "../images/art/pyography/kitsune.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_kitsune.jpg",
+        "fullsize": "../images/art/pyography/kitsune.jpg"
     },
     {
-        "image": "../images/art/pyography/moth.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_moth.jpg",
+        "fullsize": "../images/art/pyography/moth.jpg"
     },
     {
-        "image": "../images/art/pyography/wolf.jpg"
+        "thumbnail": "../images/art/pyography/thumbnails/thumb_wolf.jpg",
+        "fullsize": "../images/art/pyography/wolf.jpg"
     }
 ]
