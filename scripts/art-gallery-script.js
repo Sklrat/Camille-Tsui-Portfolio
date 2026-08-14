@@ -33,7 +33,27 @@ function openFullImg(index){
     ${selectedArt.description ? `<p>${selectedArt.description}</p>` : ""}
     ${selectedArt.date ? `<p>${selectedArt.date}</p>` : ""}
     </div>
+                        <button id="art-button-prev">&#8656;</button>
+                    <button id="art-button-next">&#8658;</button>
     `
+
+    /*making buttons work*/
+    const nextButton = document.getElementById("art-button-next")
+    nextButton.addEventListener ("click", () => {
+        index += 1;
+        if (index > savedArts.length - 1) {
+            index = 0;
+        }
+        openFullImg(index)
+    })
+    const prevButton = document.getElementById("art-button-prev")
+    prevButton.addEventListener ("click", () => {
+        index -= 1;
+         if (index < 0) {
+            index = savedArts.length - 1;
+        }
+        openFullImg(index)
+    })
 }
 
 function closeFullImg(){

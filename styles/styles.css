@@ -211,8 +211,11 @@ header li:hover {
     height: 100%;
     object-fit: cover;
 }
-.art-card-image {
-    height: 20rem;
+
+.game-card:hover, .art-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: white;
 }
 
 .game-tags {
@@ -228,10 +231,9 @@ header li:hover {
     font-family: pixellari;
 }
 
-.game-card:hover, .art-card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: white;
+
+.art-card-image {
+    height: 20rem;
 }
 
 
@@ -424,14 +426,26 @@ header li:hover {
     flex-direction: column;
     align-items: center;
     height: auto;
+}
 
+#art-button-prev, #art-button-next {
+    position: absolute;
+    font-size: 2.5rem;
+}
+
+#art-button-prev {
+    left: 2rem;
+}
+
+#art-button-next {
+    right: 2rem;
 }
 
 
 /* mobile responsiveness */
 @media screen and (max-width: 800px){
     html {
-        font-size: clamp(0.5rem, 3.5vw, 1rem);
+        font-size: clamp(0.5rem, 2.5vw, 1rem);
     }
     h1 {
         font-size: 3rem;
