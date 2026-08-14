@@ -348,6 +348,7 @@ header li:hover {
 .carousel-button-prev, .carousel-button-next {
     position: absolute;
 }
+
 .carousel-button-prev{
     left: 0;
 }
@@ -428,9 +429,24 @@ header li:hover {
     height: auto;
 }
 
-#art-button-prev, #art-button-next {
+/*next and prec buttons */
+/*maybe refactor it later*/
+#art-button-prev, #art-button-next, .carousel button{
     position: absolute;
-    font-size: 2.5rem;
+    background-color: none;
+    background: none;
+    border: none;
+    padding: 0;
+    color:var(--secondary-colour)
+}
+
+#art-button-prev svg:hover, #art-button-next svg:hover, .carousel-button-prev svg:hover, .carousel-button-next svg:hover{
+    transform: scale(1.2);
+    color:var(--button-colour)
+}
+
+#art-button-prev svg, #art-button-next svg{
+    height: 4rem;
 }
 
 #art-button-prev {
