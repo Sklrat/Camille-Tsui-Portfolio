@@ -4,10 +4,11 @@ const path = require('path');
 const sharp = require('sharp');
 
 
-// EDIT THESE PATHS AS NEEDED BEFORE RUNNING
-const imageFolder = path.join(__dirname, 'images', 'art', 'pyography');
-const thumbFolder = path.join(__dirname, 'images', 'art', 'pyography', 'thumbnails')
-const jsonOutputFile = path.join(__dirname, 'data', 'pyrography.json');
+
+const artType = 'traditional-art'; //CHANGE THIS AS NEEDED
+const imageFolder = path.join(__dirname, 'images', 'art', artType);
+const thumbFolder = path.join(__dirname, 'images', 'art', artType, 'thumbnails')
+const jsonOutputFile = path.join(__dirname, 'data', artType + '.json');
 
 //Ensure the thumbnail directory exists
 if (!fs.existsSync(thumbFolder)) {
@@ -49,8 +50,8 @@ async function generateGallery() {
     
             // Save BOTH paths to your JSON
             artData.push({
-                "thumbnail": `../images/art/pyography/thumbnails/${thumbFilename}`,
-                "fullsize": `../images/art/pyography/${filename}`
+                "thumbnail": `../images/art/${artType}/thumbnails/${thumbFilename}`,
+                "fullsize": `../images/art/${artType}/${filename}`
             });
         }
     

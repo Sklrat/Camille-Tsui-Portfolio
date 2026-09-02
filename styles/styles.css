@@ -323,11 +323,12 @@ header li:hover {
     height: 100%;
     width: 100%;
     justify-content: center;
-    gap: 10px;           
+    gap: 10px;       
 }
 
 .carousel li{
     height: 100%;
+    list-style-type: none;    
 }
 
 .carousel img{
