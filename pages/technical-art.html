@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Art</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    </header>
+    <main>
+        <h1>Technical Art</h1>
+        <h2>Bearly Enough</h2>
+        <h3>The problem</h3>
+        <p>I wanted to create a game where you get to collect many diffrent bears, however I would have to create a large number of sprites. This is a problem as it would take alot of time to recolour and put these sprites into my game.</p>
+        <h3>The solution</h3>
+        <p>Instead brute forcing the assets, I created a modular sprite system in Godot. I split the sprite into multiple technical layers using flat white textures. These would be recoloured through godot's modulate property via code which allows for infinite colour variations. To keep artwork dynamic and cohesive, I created a shader that acts as a multiply layer for more visual depth.</p>
+        <img src="../images/art/technical-art/Bear-layers.png" alt="Layer breakdown">
+        <h3>The result</h3>
+        <p>This appoach allowed me to create many unique bears just by editing colour values through the code. It also saves storage as you only need the base sprites to create more.</p>
+        <img src="../images/art/technical-art/Bear-demo.gif" alt="Bear demo">
+    </main>
+</body>
+</html>

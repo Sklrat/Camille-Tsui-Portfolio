@@ -71,6 +71,10 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    margin-bottom: 0;
+}
+
 p, li, h3 {
     font-family: betterVCR;
     font-size: 1rem;
