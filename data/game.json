@@ -13,6 +13,18 @@
         
     },
     {
+        "id": "the-blood-moon",
+        "title": "The Blood Moon",
+        "thumbnail": "../images/games/thumnails/the-blood-moon.png",
+        "date":"July 2025",
+        "description": "A point-and-click adventure horror game where you have one day to prepare for the night of the blood moon.",
+        "how_it_was_made": "This was made for a two week game jam. I worked as a background artist in a team of 5 people. I did alot of the background art such as the insides of the house, the library, pharmacy, and graveyard. These backgrounds took longer than I thought to complete but it sitll worked out. I also helped with coming up with planning and comming up with ideas for the game. In order to make sure the game would be finished on time, we learned to pioritize certian parts and keep others optional. Most of the content was able to be added into the game and I think it turned out pretty well!",
+        "link":"https://scottponder.itch.io/the-blood-moon",
+        "tags": ["game jam", "background art"],
+        "image": ["../images/games/images/tbm-libary.png", "../images/games/images/tbm-kitchen.png", "../images/games/images/tbm-basement.png", "../images/games/images/tbm-ending.png"]
+
+    },  
+    {
         "id": "got-any-grapes",
         "title":"Got any Grapes?",
         "thumbnail": "../images/games/thumnails/got-any-grapes.png",
@@ -35,14 +47,6 @@
         "link": "https://glitchasaurus.itch.io/finding-god",
         "tags": ["unity", "programming", "sprite work"]
         
-    },
-    {
-        "id": "test",
-        "title": "test game",
-        "thumbnail": "../images/test-image.jpg",
-        "tags":["testing"],
-        "date": "2020",
-        "image": ["../images/test-image.jpg"],
-        "description": "fdshj fdskh  dsnck wjds wjk  sdjkfdslkjc  kjdsalkhjn kjd hfsahu fuehfk"
     }
+
 ]
