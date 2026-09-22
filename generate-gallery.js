@@ -1,4 +1,6 @@
-/* im too lazy for this lmao */
+/* This script is for resizing and mapping images for my art gallary
+it creates a new folder with resized thumbnails if there arnt already 
+it also automatically generates the .json file holding all the art data (it can be edit mannually after if i want to add more info)*/
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');

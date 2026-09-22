@@ -1,4 +1,5 @@
 /* Games Page */
+/* Generates a card for each game in the game.json file */
 fetch("../data/game.json")
 .then(res => res.json())
 .then(games => {

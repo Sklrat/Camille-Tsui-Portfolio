@@ -19,21 +19,21 @@ phoneClick.addEventListener("click", ()=> {
     })
 })
 
-/*redirects*/
+/*open new tab to socials*/
 gitClick.addEventListener("click", ()=> {
-    window.location.href = "https://github.com/Sklrat";
+    window.open("https://github.com/Sklrat");
 })
 
 itchClick.addEventListener("click", ()=> {
-    window.location.href = "https://glitchasaurus.itch.io/";
+    window.open("https://glitchasaurus.itch.io/");
 })
 
 linkedinClick.addEventListener("click", ()=> {
-    window.location.href = "https://www.linkedin.com/in/camille-tsui-6b371a2a1/";
+    window.open("https://www.linkedin.com/in/camille-tsui-6b371a2a1/");
 })
 
 youtubeClick.addEventListener("click", ()=> {
-    window.location.href = "https://www.youtube.com/@CamsThingz";
+    window.open("https://www.youtube.com/@CamsThingz");
 })
 
 
@@ -44,7 +44,7 @@ let artClick = document.getElementById("art")
 let miscClick = document.getElementById("misc")
 
 gamesClick.addEventListener("click", ()=> {
-    window.location.href = "pages/games.html"
+    window.open = "pages/games.html"
 })
 
 artClick.addEventListener("click", ()=> {

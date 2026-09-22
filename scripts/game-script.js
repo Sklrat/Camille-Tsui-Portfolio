@@ -1,6 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const gameId = params.get("id")
 
+/* Automatically generate the game page based of its data in game.json*/
 fetch("../data/game.json")
 .then(res => res.json())
 .then(games => {
@@ -9,7 +10,7 @@ fetch("../data/game.json")
 
     //idk why image not correct unless put in carousel anymore
     //code sees if there is images and generates carousel if there is
-    //if there is onlu 1 it just put that image not whole carousel
+    //if there is only 1 it just put that image not whole carousel
     const container = document.getElementById("game-detail-container");
     container.innerHTML += `
         <section>
