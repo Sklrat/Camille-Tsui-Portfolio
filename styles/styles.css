@@ -110,6 +110,12 @@ header li:hover {
     margin: auto;
 }
 
+.profile-pic {
+    max-width: 300px;
+    width: 50rem;
+    margin: auto;
+}
+
 /* socials stuff */
 .socials li {
     min-width: 10rem;
