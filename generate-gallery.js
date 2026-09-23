@@ -7,7 +7,7 @@ const sharp = require('sharp');
 
 
 
-const artType = 'traditional-art'; //CHANGE THIS AS NEEDED
+const artType = 'digital-art'; //CHANGE THIS AS NEEDED
 const imageFolder = path.join(__dirname, 'images', 'art', artType);
 const thumbFolder = path.join(__dirname, 'images', 'art', artType, 'thumbnails')
 const jsonOutputFile = path.join(__dirname, 'data', artType + '.json');
