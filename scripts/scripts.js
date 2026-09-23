@@ -1,4 +1,4 @@
-//nav bar
+//nav bar script
 //load nav
 window.addEventListener("DOMContentLoaded", () => {
 
